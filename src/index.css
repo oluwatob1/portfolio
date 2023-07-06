@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  background: linear-gradient(
+    92.23deg,
+    #354649 21.43%,
+    #6C7A89 50.63%,
+    #A3C6C4  100%,
+    #E0E7E9 117.04%
+  );
+  /* box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51); */
+}
+
+.btnn {
+  background: linear-gradient(
+    92.23deg,
+    #354649 21.43%,
+    #6C7A89 50.63%,
+    #A3C6C4  100%,
+    #E0E7E9 117.04%
+  );
+  /* box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51); */
+}
+
+.btn:hover {
+  background: linear-gradient(
+    92.23deg,
+    /* #E0E7E9 16.43%, */
+    #A3C6C4  4 0.63%,
+    #6C7A89 100%,
+    #354649 117.04%
+  );
+}
+
+.gradient,
+.active {
+  background: linear-gradient(
+    92.23deg,
+    #354649 21.43%,
+    #6C7A89 50.63%,
+    #A3C6C4  100%,
+    #E0E7E9 117.04%
+  );
+}
+
+.active {
+  color: #000;
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+@layer base {
+  body {
+    @apply font-secondary text-lg leading-8 text-white;
+  }
+  .h2 {
+    @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
+  }
+  .h3 {
+    @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
+  }
+  .btn {
+    @apply rounded-full font-primary text-white font-medium;
+  }
+  .btn-sm {
+    @apply h-[48px] px-6 text-sm;
+  }
+  .btn-lg {
+    @apply h-[56px] px-10 text-base;
+  }
+  .btn-link {
+    @apply text-base;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#354649] to-[#6C7A89] font-bold font-primary hover:from-[#6C7A89] hover:to-[#354649];
+  }
+  .section {
+    @apply py-8 lg:py-24 flex items-center;
+  }
+}
