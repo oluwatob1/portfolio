@@ -29,7 +29,7 @@ const Banner = () => {
                 repeat={Infinity}
               />
             </motion.div> */}
-            <motion.p variants={fadeIn('up', 0.5)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.7 }}  className='lg:p-3 p-1 lg:mt-4 mt-1 lg:mb-8 mb-2 lg:text-[36px] text-[36px] font-secondary font-semibold max-w-lg mx-auto lg:mx-0 text-slate-700 leading-10'>Hi, i am Ayomide Olanrewaju. I am a <TypeAnimation sequence={[
+            <motion.p variants={fadeIn('up', 0.5)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.7 }}  className='lg:p-3 p-1 lg:mt-4 mt-1 lg:mb-8 mb-2 lg:text-[36px] text-[36px] font-secondary font-semibold max-w-lg mx-auto lg:mx-0 text-slate-700 leading-10'>Hi, i am Ayomide Olanrewaju. I am a <br class='lg:hidden md:hidden' /> <TypeAnimation sequence={[
                 'Front-end Developer',
                 2000,
                 'React Developer',
