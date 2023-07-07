@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <div className='bg-slate-800'>
+    <div className='bg-slate-800 w-screen'>
       {/* <Navb /> */}
       <Navbar />
       {/* <Header /> */}

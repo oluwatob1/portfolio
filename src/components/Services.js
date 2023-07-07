@@ -27,14 +27,14 @@ const Services = () => {
       <div className="container mx-auto">
         <div className='flex flex-col lg:flex-row'>
           {/* <motion.div variants={fadeIn('right', 0.3)} initial="hidden" whileInView={"show"} viewport={{once: false, amount: 0.3}} className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lihten mb-12 lg:mb-0'> */}
-          <motion.div variants={fadeIn('right', 0.3)} initial="hidden" whileInView={"show"} viewport={{once: false, amount: 0.3}} className='flex-1 mix-blend-lihten mb-12 lg:mb-0'>
+          <motion.div variants={fadeIn('up', 0.3)} initial="hidden" whileInView={"show"} viewport={{once: false, amount: 0.3}} className='flex-1 mix-blend-lihten mb-12 lg:mb-0'>
             <h2 className="h2 text-red mb-6">What i do.</h2>
             <h3 className='h3 max-w-[455px] mb-16 text-slate-900'>I'm a Freelance Front-end Developer with over 2 years of experience.</h3>
             <a href="#work"><button className="btn btn-sm">See my work</button></a>
             
           </motion.div>
 
-          <motion.div variants={fadeIn('left', 0.5)} initial="hidden" whileInView={"show"} viewport={{once: false, amount: 0.3}} className='flex-1'>
+          <motion.div variants={fadeIn('up', 0.5)} initial="hidden" whileInView={"show"} viewport={{once: false, amount: 0.3}} className='flex-1'>
             <div>
               {services.map((service, index) => {
                 const {name, description, link} = service;
