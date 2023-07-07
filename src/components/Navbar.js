@@ -33,7 +33,7 @@ const Navbar = () => {
             <Link  to='home' activeClass='active' smooth={true} className='cursor-pointer flex items-center justify-center' ><li className="p-4">Home</li></Link>
             <Link  to='about' activeClass='active' smooth={true} className='cursor-pointer flex items-center justify-center' ><li className="p-4">About</li></Link>
             <Link  to='services' activeClass='active' smooth={true} className='cursor-pointer flex items-center justify-center' ><li className="p-4">Services</li></Link>
-            <Link  to='portfolio' activeClass='active' smooth={true} className='cursor-pointer flex items-center justify-center' ><li className="p-4">Portfolio</li></Link>
+            <Link  to='work' activeClass='active' smooth={true} className='cursor-pointer flex items-center justify-center' ><li className="p-4">Portfolio</li></Link>
             <Link  to='contact' activeClass='active' smooth={true} className='cursor-pointer flex items-center justify-center' ><li className="p-4">Contact</li></Link>
         </ul>
         <div onClick={handleNav} className='block md:hidden'>
@@ -47,7 +47,7 @@ const Navbar = () => {
             <Link  to='home' activeClass='active' smooth={true} className='cursor-pointer flex items-center justify-center' ><li className='p-4 border-b border-gray-600' onClick={handleScrollTo}>Home</li></Link>
             <Link  to='about' activeClass='active' smooth={true} className='cursor-pointer flex items-center justify-center' ><li className='p-4 border-b border-gray-600' onClick={handleScrollTo}>About</li></Link>
             <Link  to='services' activeClass='active' smooth={true} className='cursor-pointer flex items-center justify-center' ><li className='p-4 border-b border-gray-600' onClick={handleScrollTo}>Services</li></Link>
-            <Link  to='portfolio' activeClass='active' smooth={true} className='cursor-pointer flex items-center justify-center' ><li className='p-4 border-b border-gray-600' onClick={handleScrollTo}>Portfolio</li></Link>
+            <Link  to='work' activeClass='active' smooth={true} className='cursor-pointer flex items-center justify-center' ><li className='p-4 border-b border-gray-600' onClick={handleScrollTo}>Portfolio</li></Link>
             <Link  to='contact' activeClass='active' smooth={true} className='cursor-pointer flex items-center justify-center' ><li className='p-4' onClick={handleScrollTo}>Contact</li></Link>
       </ul>
     </div>
