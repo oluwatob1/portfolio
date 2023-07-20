@@ -10,7 +10,7 @@ import { fadeIn } from '../variants'
 
 const Banner = () => {
   return (
-    <section className='min-h-[67vh] lg:min-h-[88vh] flex items-center bg-main' id='home'>
+    <section className='min-h-[67vh] lg:min-h-[88vh] flex items-center bg-white' id='home'>
       <div className='container mx-auto'>
         <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
           <div className='flex-1 text-center font-secondary lg:text-left'>
@@ -33,6 +33,8 @@ const Banner = () => {
                 'Front-end Developer',
                 2000,
                 'React Developer',
+                2000,
+                'Data Amalyst',
                 2000,
               ]}
                 speed={50}

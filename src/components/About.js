@@ -22,12 +22,13 @@ const About = () => {
           <motion.div variants={fadeIn('up', 0.5)} initial="hidden" whileInView={"show"} viewport={{once: false, amount: 0.3}} className='flex-1'>
             <h2 className='h2 text-red'>About me</h2>
             <h3 className='h3 mb-4 text-slate-900'>I'm a Front-end Developer with over 2 years of experience.</h3>
-            <p className='mb-6 text-slate-900'>I am a front-end developer based in Nigeria focused on creating creating interactive web applications to cater for your everyday needs.</p>
+            <p className='mb-6 text-slate-900'>An IT enthusiast with interest in Data Science and Web development processes. Resourceful, analytical and resultoriented. Equipped with skills in web applications and data analysis. I possess a commendable eagerness towards learning to improve myself, impeccable leadership, communication and a great team spirit.</p>
+            {/* <p className='mb-6 text-slate-900'>I am a front-end developer based in Nigeria focused on creating creating interactive web applications to cater for your everyday needs.</p> */}
             <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
                   {
-                  inView ? <CountUp start={0} end={2} duration={3} /> : null}
+                  inView ? <CountUp start={0} end={3} duration={1} /> : null}+
                 </div>
                 <div className='font-primary text-smtracking-[2px] text-slate-900'>Years of <br /> Experience</div>
               </div>
