@@ -7,6 +7,7 @@ import { FaGithub, FaYoutube, FaLinkedin } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants'
+import { Link } from 'react-scroll';
 
 const Banner = () => {
   return (
@@ -43,13 +44,16 @@ const Banner = () => {
                 repeat={Infinity}
               />.</motion.p>
             <motion.div variants={fadeIn('up', 0.6)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
-              <a href="#service"><button className='btn btn-lg'>Contact Me</button></a>
-              <a href="#work" className='text-gradient btn-link'>My Portfolio</a>
+              <Link to='contact'><button className='btn btn-lg'>Contact Me</button></Link>
+              <Link to="work" className='text-gradient btn-link'><button>My Portfolio</button></Link>
             </motion.div>
             <motion.div variants={fadeIn('up', 0.7)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='flex text-[20px] text-slate-900 gap-x-6 max-w-max mx-auto lg:mx-0'>
               {/* <a href="#">
                 <FaYoutube />
               </a> */}
+              {/* <Link to='https://github.com/oluwatob1'>
+                <FaGithub />
+              </Link> */}
               <a href="https://github.com/oluwatob1">
                 <FaGithub />
               </a>

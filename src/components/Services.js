@@ -2,21 +2,22 @@ import React from 'react';
 import {BsArrowUpRight} from 'react-icons/bs';
 import { motion } from 'framer-motion';
 import {fadeIn} from '../variants';
+import { Link } from 'react-scroll';
 
 const services = [
   {
     name: 'Web Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse hic voluptatem itaque architecto, doloribus ut! Ea nostrum illum doloremque fugiat.',
+    description: 'We are responsible for designing and building the interface, navigation and aesthetic of websites for businesses and clients making use of CMS programs.',
     link: 'Learn more',
   },
   {
-    name: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse hic voluptatem itaque architecto, doloribus ut! Ea nostrum illum doloremque fugiat.',
+    name: 'Web Development',
+    description: 'We are responsible for the design and construction of websites making user have a great interface and experience.',
     link: 'Learn more',
   },
   {
-    name: 'Photography',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse hic voluptatem itaque architecto, doloribus ut! Ea nostrum illum doloremque fugiat.',
+    name: 'Data Analysis',
+    description: 'We are responsible for collecting, cleaning, and interpreting data sets in order to answer a question or solve a problem using excel and power Bi as a tool',
     link: 'Learn more',
   },
 ]
@@ -30,7 +31,7 @@ const Services = () => {
           <motion.div variants={fadeIn('up', 0.3)} initial="hidden" whileInView={"show"} viewport={{once: false, amount: 0.3}} className='flex-1 mix-blend-lihten mb-12 lg:mb-0'>
             <h2 className="h2 text-red mb-6">What i do.</h2>
             <h3 className='h3 max-w-[455px] mb-16 text-slate-900'>I'm a Freelance Front-end Developer with over 3 years of experience.</h3>
-            <a href="#work"><button className="btn btn-sm">See my work</button></a>
+            <Link to="work"><button className="btn btn-sm">See my work</button></Link>
             
           </motion.div>
 
