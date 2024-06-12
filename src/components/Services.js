@@ -1,5 +1,5 @@
 import React from 'react';
-import {BsArrowUpRight} from 'react-icons/bs';
+// import {BsArrowUpRight} from 'react-icons/bs';
 import { motion } from 'framer-motion';
 import {fadeIn} from '../variants';
 import { Link } from 'react-scroll';
@@ -12,7 +12,7 @@ const services = [
   },
   {
     name: 'Web Development',
-    description: 'We are responsible for the design and construction of websites making user have a great interface and experience.',
+    description: 'We are responsible for the design and development of web applications making user have a great interface and experience.',
     link: 'Learn more',
   },
   {
@@ -38,7 +38,7 @@ const Services = () => {
           <motion.div variants={fadeIn('up', 0.5)} initial="hidden" whileInView={"show"} viewport={{once: false, amount: 0.3}} className='flex-1'>
             <div>
               {services.map((service, index) => {
-                const {name, description, link} = service;
+                const {name, description} = service;
                 return(
                   <div className='border-b border-red/50 h-[146px] mb-[38px] flex' key={index}>
                     <div className='/* max-w-[476px] */'>

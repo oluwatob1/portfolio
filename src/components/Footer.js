@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
-import { BsFillPersonLinesFill } from 'react-icons/bs'
+// import { BsFillPersonLinesFill } from 'react-icons/bs'
 
 const Footer = () => {
 
@@ -43,7 +43,7 @@ const Footer = () => {
                     <HiOutlineMail size={20} />
                 </>
             ),
-            href: 'mailto:distinctshoot01@gmail.com',
+            href: 'mailto:codesbytobi@gmail.com',
 
         },
 
@@ -52,7 +52,7 @@ const Footer = () => {
     return (
         <footer className="bg-gray-900 text-white py-4">
             <div className="container mx-auto px-4">
-                <p className="text-center">© 2023 dev tobi. All rights reserved.</p>
+                <p className="text-center">© 2024 codesByTobi. All rights reserved.</p>
                 <div className="flex justify-center mb-4">
                     <ul className='flex justify-between items-center '>
                         {links.map(({ id, child, href, style, download }) => (

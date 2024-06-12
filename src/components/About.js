@@ -4,7 +4,7 @@ import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 // import { motion } from 'framer-motion';
 import {fadeIn} from '../variants';
-import Image3 from '../assets/graph.png';
+// import Image3 from '../assets/graph.png';
 import Image4 from '../assets/2.JPG'
 import { Link } from 'react-scroll';
 
@@ -23,7 +23,7 @@ const About = () => {
           <motion.div variants={fadeIn('up', 0.5)} initial="hidden" whileInView={"show"} viewport={{once: false, amount: 0.3}} className='flex-1'>
             <h2 className='h2 text-red'>About me</h2>
             <h3 className='h3 mb-4 text-slate-900'>I'm a Front-end Developer with over 2 years of experience.</h3>
-            <p className='mb-6 text-slate-900'>An IT enthusiast with interest in Data Science and Web development processes. Resourceful, analytical and resultoriented. Equipped with skills in web applications and data analysis. I possess a commendable eagerness towards learning to improve myself, impeccable leadership, communication and a great team spirit.</p>
+            <p className='mb-6 text-slate-900'>An IT enthusiast with interest in Data Science and Web development processes. Resourceful, analytical and result-oriented. Equipped with skills in web applications and data analysis. I possess a commendable eagerness towards learning to improve myself, impeccable leadership, communication and a great team spirit.</p>
             {/* <p className='mb-6 text-slate-900'>I am a front-end developer based in Nigeria focused on creating creating interactive web applications to cater for your everyday needs.</p> */}
             <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
               <div>

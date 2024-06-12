@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
 import Logo from '../assets/logo.png';
-import Logo2 from '../assets/logo5.png'
+// import Logo2 from '../assets/logo5.png'
 import { Link } from 'react-scroll';
 import { scroller } from 'react-scroll';
 
@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <div className="flex justify-between items-center h-20 max-w-[1240px] mx-auto px-4 text-white">
         {/* <h1 className="w-full text-3xl font-bold">Hello</h1> */}
-        <a href='#'>
+        <a href='' alt='logo'>
             <img src={Logo} alt='' width='120px' />
         </a>
         <ul className="hidden  md:flex">

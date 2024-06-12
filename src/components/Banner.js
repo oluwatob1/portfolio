@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 // import Image from '../assets/avatar.svg';
-import Image2 from '../assets/3-removebg-preview.png';
-import Image3 from '../assets/graph.png';
-import { FaGithub, FaYoutube, FaLinkedin } from 'react-icons/fa';
+// import Image2 from '../assets/3-removebg-preview.png';
+import Image3 from '../assets/graph3.png';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants'
@@ -47,20 +47,14 @@ const Banner = () => {
               <Link to='contact'><button className='btn btn-lg'>Contact Me</button></Link>
               <Link to="work" className='text-gradient btn-link'><button>My Portfolio</button></Link>
             </motion.div>
-            <motion.div variants={fadeIn('up', 0.7)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='flex text-[20px] text-slate-900 gap-x-6 max-w-max mx-auto lg:mx-0'>
-              {/* <a href="#">
-                <FaYoutube />
-              </a> */}
-              {/* <Link to='https://github.com/oluwatob1'>
-                <FaGithub />
-              </Link> */}
+            {/* <motion.div variants={fadeIn('up', 0.7)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='flex text-[20px] text-slate-900 gap-x-6 max-w-max mx-auto lg:mx-0'>
               <a href="https://github.com/oluwatob1">
                 <FaGithub />
               </a>
               <a href="https://www.linkedin.com/in/ayolanre">
                 <FaLinkedin />
               </a>
-            </motion.div>
+            </motion.div> */}
           </div>
           <motion.div variants={fadeIn('down', 0.7)} initial="hidden" whileInView={'show'} className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[5182px]'>
             <img src={Image3} alt='' className='animate-profile-animate mx-auto w-2/3 md:w-full' width='700px' />
