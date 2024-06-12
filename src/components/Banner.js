@@ -3,7 +3,7 @@ import React from 'react';
 // import Image from '../assets/avatar.svg';
 // import Image2 from '../assets/3-removebg-preview.png';
 import Image3 from '../assets/graph3.png';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+// import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants'
