@@ -26,9 +26,9 @@ const Navbar = () => {
   return (
     <div className="flex justify-between items-center h-20 max-w-[1240px] mx-auto px-4 text-white">
         {/* <h1 className="w-full text-3xl font-bold">Hello</h1> */}
-        <a href='' alt='logo'>
+        <Link to='#' alt='logo'>
             <img src={Logo} alt='' width='120px' />
-        </a>
+        </Link>
         <ul className="hidden  md:flex">
             <Link  to='home' activeClass='active' smooth={true} className='cursor-pointer flex items-center justify-center' ><li className="p-4">Home</li></Link>
             <Link  to='about' activeClass='active' smooth={true} className='cursor-pointer flex items-center justify-center' ><li className="p-4">About</li></Link>
@@ -41,9 +41,9 @@ const Navbar = () => {
         </div>
         <ul className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500' : 'ease-in-out duration-500 fixed left-[-100%]'}>
         {/* <h1 className='w-full text-3xl font-bold text-[#00df9a] m-4'>REACT.</h1> */}
-            <a href='#'>
+            <Link to='#'>
                 <img src={Logo} alt='' width='120px' className='m-4' />
-            </a>
+            </Link>
             <Link  to='home' activeClass='active' smooth={true} className='cursor-pointer flex items-center justify-center' ><li className='p-4 border-b border-gray-600' onClick={handleScrollTo}>Home</li></Link>
             <Link  to='about' activeClass='active' smooth={true} className='cursor-pointer flex items-center justify-center' ><li className='p-4 border-b border-gray-600' onClick={handleScrollTo}>About</li></Link>
             <Link  to='services' activeClass='active' smooth={true} className='cursor-pointer flex items-center justify-center' ><li className='p-4 border-b border-gray-600' onClick={handleScrollTo}>Services</li></Link>
